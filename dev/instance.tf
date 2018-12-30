@@ -15,12 +15,9 @@ resource "aws_instance" "test" {
 
 }
 
-    provisioner "remote-exec" {
-      inline = ["sudo yum install httpd -y"]
              
 
 
-}
 
 
 
@@ -32,6 +29,5 @@ resource "aws_instance" "test" {
      Created_by = "${var.created_by}"
      Dept       = "${var.dept}"
 
-
-     }
+}
 } 
